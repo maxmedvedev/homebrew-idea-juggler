@@ -1,42 +1,16 @@
 # Homebrew Tap for idea-juggler
 
-This is a Homebrew tap for [idea-juggler](https://github.com/your-username/idea-juggler), a Kotlin-based CLI tool that manages separate IntelliJ IDEA instances per project with isolated configurations.
-
 ## Installation
 
 ```bash
-# Add the tap
-brew tap your-username/idea-juggler
-
-# Install idea-juggler
+brew tap maxmedvedev/tap
 brew install idea-juggler
 ```
 
-## Usage
-
-After installation, you can use `idea-juggler` from anywhere:
+## Verification
 
 ```bash
-# Configure IntelliJ path
-idea-juggler config --intellij-path /Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea
-
-# Open a project with isolated configuration
-idea-juggler open ~/projects/my-app
-
-# List tracked projects
-idea-juggler list
-
-# Show recent projects
-idea-juggler recent
-```
-
-For full documentation, see the [main repository](https://github.com/your-username/idea-juggler).
-
-## Updating
-
-```bash
-brew update
-brew upgrade idea-juggler
+idea-juggler --help
 ```
 
 ## Development
@@ -44,9 +18,20 @@ brew upgrade idea-juggler
 To test the formula locally:
 
 ```bash
-# Install from local tap
 brew install --build-from-source Formula/idea-juggler.rb
+```
 
-# Run tests
-brew test idea-juggler
+## Updating the Formula
+
+When a new version of idea-juggler is released:
+
+1. Update the `url` in `Formula/idea-juggler.rb` to point to the new release
+2. Update the `sha256` with the checksum from the release artifacts
+3. Commit and push the changes
+
+Example:
+
+```ruby
+url "https://github.com/maxmedvedev/idea-juggler/releases/download/v1.0.1/idea-juggler-1.0.1.tar.gz"
+sha256 "abc123..."
 ```
