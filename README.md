@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-brew tap maxmedvedev/tap
+brew tap maxmedvedev/idea-juggler
 brew install idea-juggler
 ```
 
