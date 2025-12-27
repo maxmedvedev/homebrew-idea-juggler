@@ -1,8 +1,8 @@
 class ProjectJuggler < Formula
   desc "CLI tool that manages separate IntelliJ IDEA instances per project"
   homepage "https://github.com/maxmedvedev/project-juggler"
-  url "https://github.com/maxmedvedev/project-juggler/releases/download/0.0.1/project-juggler-0.0.1.tar.gz"
-  sha256 "30ff52bf7444f52ad4757a1ed55fbaf57afd3998085ce155b5b7e52064fae896"
+  url "https://github.com/maxmedvedev/project-juggler/releases/download/0.0.2/project-juggler-0.0.2.tar.gz"
+  sha256 "2d3b53a45039796d3b47b0016f1b0cb73c7fa8b5365edac097deadf2d90c366f"
   license "MIT"
 
   depends_on "openjdk@17"
